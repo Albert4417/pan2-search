@@ -5,15 +5,15 @@ display_name_en: Pan2 Resource Search
 description: 搜索 pan2 资源站（默认 https://www.pan2.cc.cd）的多网盘资源，聚合夸克、百度、阿里、UC、115、迅雷、天翼、123、磁力等来源，并融合 Telegram 影视资源频道；默认返回 10 条结果与资源详情入口。触发词：搜资源、找资源、网盘搜索、pan2、pan2.cc.cd、夸克/百度/UC/115/磁力资源、资源详情。
 description_zh: "找电影、追剧、搜动漫、查资料，不用再挨个网站翻找。Pan2 汇聚多个网盘搜索引擎与资源分享频道，持续收录更新资源，一次搜索，多源查找。覆盖夸克、百度、阿里云盘、UC、115、迅雷、天翼、123 等主流网盘及磁力资源，兼顾新片热剧与经典资源。说出想找的资源名，即可获取搜索结果；支持按网盘筛选，点击查看资源详情，让找资源更省时、省心。"
 description_en: "Find movies, follow series, search anime, or look up materials without checking site after site. Pan2 brings together multiple cloud-drive search engines and resource-sharing channels, continuously indexing and updating resources—one search, multiple sources. It covers Quark, Baidu, Aliyun Drive, UC, 115, Xunlei, Tianyi, 123 and other major cloud drives plus magnet links, balancing new releases with classics. Just name what you need to get search results; filter by cloud drive and open resource details for a faster, easier search."
-version: 1.2.6
+version: 1.2.7
 examples_zh:
-- "帮我搜三体的网盘资源"
-- "找一下 2026 新剧，只要夸克网盘"
-- "有没有适合周末看的科幻电影"
+- "帮我找一份 Python 入门教程"
+- "搜一下免费的 PPT 模板"
+- "有没有适合新手的 Excel 学习资料"
 examples_en:
-- "Find netdisk resources for Three-Body"
-- "Search 2026 new TV series on Quark only"
-- "Find a sci-fi movie for the weekend"
+- "Find a Python beginner tutorial"
+- "Search for free presentation templates"
+- "Look for beginner Excel study materials"
 agent_created: true
 author: Claude
 ---
@@ -26,10 +26,10 @@ author: Claude
 
 ```bash
 # 搜索，默认 10 条
-python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "三体"
+python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "Python 入门教程"
 
 # 指定条数与网盘
-python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "三体" --limit 20 --cloud 夸克网盘
+python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "Python 入门教程" --limit 20 --cloud 夸克网盘
 ```
 
 依赖：Python 3.9+、`requests`。站点地址可用环境变量覆盖：`PAN2_BASE_URL`。缓存目录：`PAN2_CACHE_DIR`（默认 `~/.cache/pan2-search`）。
@@ -43,8 +43,8 @@ python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "三体" --limit 20 
 ## 输出格式
 
 ```
-「三体」共 196 条，展示 10 条：
-1. 三体 (2024) 4K — 夸克网盘
+「Python 入门教程」共 196 条，展示 10 条：
+1. Python 入门教程（2026 版）— 夸克网盘
    详情：https://www.pan2.cc.cd/detail?k=...
 ```
 
