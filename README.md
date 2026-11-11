@@ -14,10 +14,10 @@
 ## 适合这些场景
 
 ```text
-帮我找三体的 4K 资源
-搜一下庆余年，只要夸克网盘
-有没有 2026 年新剧的网盘资源
-找一部适合周末看的科幻电影
+帮我找一份 Python 入门教程
+搜一下免费的 PPT 模板
+有没有适合新手的 Excel 学习资料
+找一套开源项目的学习文档
 ```
 
 ## 安装
@@ -35,25 +35,25 @@ python3 -m pip install requests
 
 ```bash
 # 默认返回 10 条
-python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "三体"
+python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "Python 入门教程"
 
 # 返回 20 条
-python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "三体" --limit 20
+python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "Python 入门教程" --limit 20
 
 # 只看夸克网盘
-python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "庆余年" --cloud 夸克网盘
+python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "PPT 模板" --cloud 夸克网盘
 
 # 结构化输出
-python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "三体" --json
+python3 ~/.claude/skills/pan2-search/scripts/pan2_search.py "Python 入门教程" --json
 ```
 
 输出示例：
 
 ```text
-「三体」共 196 条，展示 10 条：
-1. 三体 (2024) 4K — 夸克网盘
+「Python 入门教程」共 196 条，展示 10 条：
+1. Python 入门教程（2026 版）— 夸克网盘
    详情：https://www.pan2.cc.cd/detail?k=...
-2. 三体 · 周年纪念版 (2023) 1080P — 百度网盘
+2. Excel 函数与数据透视表教程 — 百度网盘
    详情：https://www.pan2.cc.cd/detail?k=...
 ```
 
