@@ -2,10 +2,19 @@
 name: pan2-search
 display_name: pan2 资源搜索
 display_name_en: Pan2 Resource Search
-description: 搜索 pan2 资源站（默认 https://www.pan2.cc.cd）的多网盘资源，默认返回 10 条结果与资源详情入口。触发词：搜资源、找资源、网盘搜索、pan2、pan2.cc.cd、夸克/百度/UC/115/磁力资源、资源详情。
-description_zh: 搜索 pan2 资源站的多网盘资源，默认返回 10 条结果与资源详情入口。
-description_en: Search multi-cloud-drive resources on pan2 (default https://www.pan2.cc.cd), returning 10 results with in-site resource detail entries by default.
-version: 1.2.3
+description: 搜索 pan2 资源站（默认 https://www.pan2.cc.cd）的多网盘资源，聚合夸克、百度、阿里、UC、115、迅雷、天翼、123、磁力等来源，并融合 Telegram 影视资源频道；默认返回 10 条结果与资源详情入口。触发词：搜资源、找资源、网盘搜索、pan2、pan2.cc.cd、夸克/百度/UC/115/磁力资源、资源详情。
+description_zh: 聚合夸克、百度、阿里云盘、UC、115、迅雷、天翼、123、磁力等多网盘搜索源，并融合 Telegram 影视资源频道；默认返回 10 条精选结果与站内详情入口。
+description_en: Aggregates search sources across Quark, Baidu, Aliyun, UC, 115, Xunlei, Tianyi, 123, magnet and more, plus Telegram movie/TV resource channels; returns 10 curated results with in-site detail entries by default.
+version: 1.2.5
+examples_zh:
+- "帮我搜三体的网盘资源"
+- "找一下 2026 新剧，只要夸克网盘"
+- "有没有适合周末看的科幻电影"
+examples_en:
+- "Find netdisk resources for Three-Body"
+- "Search 2026 new TV series on Quark only"
+- "Find a sci-fi movie for the weekend"
+agent_created: true
 author: Claude
 ---
 
