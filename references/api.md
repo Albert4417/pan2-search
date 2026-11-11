@@ -25,7 +25,7 @@
   "has_more": true,
   "results": [{
     "source": "database",
-    "name": "三体 (2024) 4K",
+    "name": "Python 入门教程（2026 版）",
     "cloud_name": "夸克网盘",
     "detail_url": "/detail?k=..."
   }]
