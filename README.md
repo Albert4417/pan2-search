@@ -27,7 +27,7 @@
 作为 Claude Code 技能使用：
 
 ```bash
-git clone https://github.com/<your-name>/pan2-search.git ~/.claude/skills/pan2-search
+git clone https://github.com/Albert4417/pan2-search.git ~/.claude/skills/pan2-search
 python3 -m pip install requests
 ```
 
