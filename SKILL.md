@@ -1,8 +1,11 @@
 ---
 name: pan2-search
 display_name: pan2 资源搜索
+display_name_en: Pan2 Resource Search
 description: 搜索 pan2 资源站（默认 https://www.pan2.cc.cd）的多网盘资源，默认返回 10 条结果与资源详情入口。触发词：搜资源、找资源、网盘搜索、pan2、pan2.cc.cd、夸克/百度/UC/115/磁力资源、资源详情。
-version: 1.2.2
+description_zh: 搜索 pan2 资源站的多网盘资源，默认返回 10 条结果与资源详情入口。
+description_en: Search multi-cloud-drive resources on pan2 (default https://www.pan2.cc.cd), returning 10 results with in-site resource detail entries by default.
+version: 1.2.3
 author: Claude
 ---
 
